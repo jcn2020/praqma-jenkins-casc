@@ -1,0 +1,16 @@
+jenkins:
+#  systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code Plugin\n\n"
+  systemMessage: "Hello Day of Jenkins.\n\n"
+  numExecutors: 1
+  mode: NORMAL
+  scmCheckoutRetryCount: 3
+  labelString: "master-label"
+  
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: demoAdmin
+          password: ${adminpw}
+  
+  
